@@ -18,27 +18,25 @@
    
     .then(date => {
         const connect = document.getElementById('comments');
-             date.forEach(comment => {
-            const username = document.createElement('h3');
-            username.textContent = `Name: ${comment.name}`;          
-            username.style.textAlign='center';
-            username.style.color='rgb(34 211 238)' ;
-            comments.appendChild(username);
-
-
+             date.map(comment => {
+              // const divelement=document.createElement('div')          
+              // divelement.style.border='3px solid black'
+              // divelement.textContent = `Name: ${comment.name}   Email: ${comment.email}`; 
+              // comments.appendChild(divelement);
             
-            const email = document.createElement('h5');
-            email.textContent = `Email: ${comment.email}`;
-            email.style.textAlign='center';
-            email.style.color='rgb(252 165 165)' ;
-            comments.appendChild(email);
-             
-            const body = document.createElement('p');
-            body.textContent = `body: ${comment.body}`;
-            body.style.textAlign='center';
-            body.style.color=' rgb(255, 255, 128)';
-            comments.appendChild(body);
-           
+              const divelement = document.createElement('div');
+              const namePara = document.createElement('p');
+              const emailPara = document.createElement('p');
+               const body=document.createElement('p');
+              
+              namePara.textContent = `Name: ${comment.name}`;
+              emailPara.textContent = `Email: ${comment.email}`;
+              body.textContent=`Body:${comment.body}`;
+
+              divelement.appendChild(namePara);
+             divelement.appendChild(emailPara);
+             divelement.appendChild(body);
+             comments.appendChild(divelement);
           
         });
     }); 
