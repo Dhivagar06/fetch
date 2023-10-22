@@ -25,10 +25,21 @@
               // comments.appendChild(divelement);
             
               const divelement = document.createElement('div');
+              divelement.style.border='3px solid black'
+              divelement.style.margin='10px'
+              divelement.style.textAlign='center';
+              divelement.style.backgroundColor='#f6b93b';
               const namePara = document.createElement('p');
+              namePara.style.color= '#2c2c54';
+              namePara.style.fontSize= '20px';
+
+             
+
               const emailPara = document.createElement('p');
                const body=document.createElement('p');
-              
+               body.style.font='italic bold 15px monospace';
+
+
               namePara.textContent = `Name: ${comment.name}`;
               emailPara.textContent = `Email: ${comment.email}`;
               body.textContent=`Body:${comment.body}`;

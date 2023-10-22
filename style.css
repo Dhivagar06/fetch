@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(107 114 128)
+    background-color:#0652DD
 }
 #form{
     width: 500px;
@@ -10,7 +10,7 @@ body{
 }
 h1{
 text-align: center;
-color: chocolate;
+color: #ff4d4d;
 }
 .button{
     background-color:deepskyblue ;
@@ -22,6 +22,7 @@ color: chocolate;
     cursor: pointer;
     font-size: 20px;
     width: 100%;
+ 
 }
 .input-group{
     display: flex;
@@ -50,19 +51,17 @@ color: chocolate;
     border-color: rgb(206, 67, 67);
 }
 nav{
-    background-color: rgb(251 191 36);
-    font-size: 28px;
-    width:120%;
+    background-color: #a4b0be;
     display:flex;
     align-items:center;
-    justify-content: space-around;
-    color:darkslateblue;
-    margin-top: -10px;
-    margin-left: -10px;
-  
-    
+   color: #0cc477;
+   margin-top: -10px;
+   margin-left: -10px;
+   margin-right: -10px;    
 }
-
+.home {
+    margin-left:920px;
+}
 nav li{
     display:inline-block;
     margin:0 8px;
@@ -75,10 +74,13 @@ nav a{
 .logo{
     font-size:36px;
     font-weight: bolder;
+    margin-left: 50px;
+   
+    
 }
 
 nav a:hover{
-    color:whitesmoke;
+    color:white;
 }
 
 .menu-line{
