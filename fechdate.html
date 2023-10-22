@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body class="fetch">
+    <div  id="comments"></div>
+
+
+     <script>
+    // JavaScript code to fetch and display comments goes here
+    fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(response => response.json())
+   
+    .then(date => {
+        const connect = document.getElementById('comments');
+             date.forEach(comment => {
+            const username = document.createElement('h3');
+            username.textContent = `Name: ${comment.name}`;          
+            username.style.textAlign='center';
+            username.style.color='rgb(34 211 238)' ;
+            comments.appendChild(username);
+
+
+            
+            const email = document.createElement('h5');
+            email.textContent = `Email: ${comment.email}`;
+            email.style.textAlign='center';
+            email.style.color='rgb(252 165 165)' ;
+            comments.appendChild(email);
+             
+            const body = document.createElement('p');
+            body.textContent = `body: ${comment.body}`;
+            body.style.textAlign='center';
+            body.style.color=' rgb(255, 255, 128)';
+            comments.appendChild(body);
+           
+          
+        });
+    }); 
+  </script> 
+
+
+
+
+</body>
+</html>
